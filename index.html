@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Albiza & Adhi Wedding</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="opening">
+  <h2>The Wedding Of</h2>
+  <h1>Albiza & Adhi</h1>
+  <p id="guest"></p>
+  <button onclick="openInvite()">Open Invitation</button>
+</div>
+
+<audio id="music" src="music.mp3" loop></audio>
+
+<div id="main">
+
+<section class="hero">
+  <h1>Albiza Hanum Arshari</h1>
+  <h2>&</h2>
+  <h1>Dwi Adhi Margunanto Sugiharto</h1>
+  <p>2 Mei 2025</p>
+
+  <div class="photos">
+    <img src="foto-pria.png">
+    <img src="foto-wanita.png">
+  </div>
+
+  <div id="countdown"></div>
+</section>
+
+<section class="section">
+  <h2>Akad Nikah</h2>
+  <p>09.00 WIB</p>
+
+  <h2>Resepsi</h2>
+  <p>13.00 – 15.00 WIB</p>
+  <p>Graha Darussalam Cilacap</p>
+</section>
+
+<section class="section">
+<h2>RSVP</h2>
+<form id="rsvp-form">
+<input type="text" name="nama" placeholder="Nama Anda" required>
+<select name="kehadiran">
+<option value="Hadir">Hadir</option>
+<option value="Tidak Hadir">Tidak Hadir</option>
+</select>
+<input type="number" name="jumlah" placeholder="Jumlah Tamu">
+<textarea name="ucapan" placeholder="Ucapan & Doa"></textarea>
+<button type="submit">Kirim</button>
+</form>
+<p id="status"></p>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
